@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(2, 110, 143);
+    text-align: center;
+
+}
+.title{
+    color: white;
+    font-size: 100px;
+}
+.TekstObliczenia{
+    color: rgb(255, 255, 255);
+}
+input#Benz{
+    color: red;
+}
+.tekstp{
+    background-color: rgb(202, 202, 202);
+    font-weight: bolder;
+}
+.rodzaje{
+    color: white;
+}
+.Litarki1{
+    /*margin-top: 50px;*/
+    color: rgb(255, 187, 0);
+    font-weight: bolder;
+}
+.buttonik{
+    border-radius: 20px;
+    /*(border: dotted solid 2px;*/
+}

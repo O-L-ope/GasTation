@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StacjaBen</title>
+    <link href="stylki.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Stacja Benzynowa</h1>
+    <h3 class="TekstObliczenia">Oblicz koszt paliwa</h3>
+    <fieldset> <!--Dodać do tego rozmiary w CSS !!! -->
+        <legend class="tekstp">Wybierz rodzaj paliwa</legend>
+    
+        <div>
+          <input type="radio" id="Benz" name="Paliwo" value="Benzyna" checked>
+          <label class="rodzaje" for="Benzyna">Benzyna</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="Rop" name="Paliwo" value="Ropa" checked>
+          <label class="rodzaje" for="Ropa">Ropa</label>
+        </div>
+        
+        <div>
+            <label class="Litarki1" for="Litry">Podaj ilość litrów</label><br>
+            <input type="number" name="" id="Litry"><br>
+        </div>
+        <button class="buttonik" onclick="oblicz()">Oblicz</button>
+        <p id="kosztpaliwa"></p>
+    </fieldset>
+    
+    <script>
+        function oblicz(){
+            var ilosc = document.getElementById("Litry").value;
+            var Benzyna = 7.50;
+            var Ropa = 6.70;
+            var suma = 0;
+            if (document.getElementById("Benz").checked === true){
+                var cena = 7.50;
+                var suma = cena * ilosc;
+                document.getElementById('kosztpaliwa').innerHTML = "Koszt paliwa: " + suma + "zł";
+            }
+            else if (document.getElementById("Rop").checked === true) {
+                var cena = 6.70;
+                var suma = cena * ilosc;
+                document.getElementById('kosztpaliwa').innerHTML = "Koszt paliwa: " + suma + "zł";
+            }
+        }
+    </script>
+
+    <!-- <script>
+       // function check(){
+           // if(document.getElementById("radio").checked);
+        //}
+        
+        function oblicz() {
+            var rodzaj = document.getElementById('RodzajPaliwa').value;
+            rodzaj - parseInt(rodzaj);
+            var ilosc = document.getElementById('Litry').value;
+            ilosc = parseInt(ilosc);
+            var koszt = 0;
+            //if(document.getElementById("RodzajPaliwa").checked);
+            //var koszt = 0;
+            //var rodzaj = document.getElementById("RodzajPaliwa").value;
+            //var ilosc = document.getElementById('Paliwo');
+            //var ilosc = document.getElementById('Paliwo'); //
+            //var rodzaj = kosztBenzyny, kosztRopy;
+            //var kosztBenzyny = 7.50;
+            //var kosztRopy = 6.70;
+            switch (rodzaj) {
+                case 1:
+                    koszt = ilosc * kosztBenzyny;
+                    break;
+                case 2:
+                    koszt = ilosc * kosztRopy;
+                    break;
+                default:
+                    koszt = 0;
+                    break;
+            }
+
+        document.getElementById('kosztpaliwa').innerHTML = "Koszt paliwa: " + koszt + "zł";
+        }
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<fieldset>
+        <legend>Podaj ilość litrów</legend>
+        <div>
+            <label for="Litry"></label>
+        </div>
+
+
+
+
+    </fieldset> -->
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <!--<h1>Stacja Benzynowa</h1>
+    <h3>Oblicz koszt paliwa</h3>
+        <label for="Paliwo">Paliwo (1-Benzyna, 2-Ropa)</label><br>
+        <input type="liczba" name="Benzyna" id="Paliwo"><br>
+        <label for="liczbalitrow">Ile litrów:</label><br>
+        <input type="liczba" name="Benzyna" id="liczbalitrow"><br>
+        <button onclick="wylicz()">Wylicz</button>
+
+
+
+
+
+
+
+    <script>
+        function wylicz() {
+            
+        }
+
+
+
+    </script> -->
+
+
+</body>
+</html>
